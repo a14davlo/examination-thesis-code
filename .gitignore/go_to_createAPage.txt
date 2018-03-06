@@ -1,0 +1,24 @@
+// ==UserScript==
+// @name         Go to "Create a Page"
+// @namespace    http://tampermonkey.net/
+// @version      0.1
+// @description  try to take over the world!
+// @author       You
+// @match        http://grupp4.tk:8888/install/joomla-cms-staging/
+// @grant        none
+// @require     https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js
+// ==/UserScript==
+
+(function() {
+    var nr2 = localStorage.getItem("articleNumber2");
+    console.log(nr2);
+    if(nr2 < 2000){
+        nr2 ++;
+        localStorage.setItem("articleNumber2", nr2);
+        //alert(nr2);
+
+        // skickas vidare till ny sida
+        window.location.href = "http://grupp4.tk:8888/install/joomla-cms-staging/index.php/create-a-post";
+    }
+
+})();
