@@ -1,3 +1,5 @@
 Hi!
 
 I don't own the copyright of Joomla CMS, it's opensource and used as the framework for my project.
+Inside gitignore there's code from Contentmanagement course from autumn 2017.
+The idea is to reuse some of the timer code, need a code that turns the screen black/empty after x seconds to do research on first impression.
